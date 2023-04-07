@@ -9,7 +9,144 @@
 }
 body{
     background-color: var(--background-color);
+    z-index: 10;
 }
+.mobile{
+    display: hidden;
+}
+.desktop > nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-around;
+}
+.desktop > nav a{
+    margin-top: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s
+}
+.desktop > nav a:hover{
+    text-decoration: underline;
+    color: red;
+    font-size: 22px;
+}
+.desktop > nav img{
+    margin-top: 10px;
+}
+header{
+    width: 100%;
+    height: 75vh;
+    background-image: url(../media/images/pexels.png);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    right: 0;
+    top: 75px;
+    z-index: -5;
+}
+main{
+    background-color: red;
+    width: 100%;
+    height: 800px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+}
+main .text{
+    margin-top: 75px;
+    height: 650px;
+    width: 60vw;
+    background-color: black;
+}
+main .ashton{
+    margin-top: 75px;
+    height: 650px;
+    width: 30vw;
+    background-color: black;
+}
+.pricing{
+    background-color: black;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: space-between;
+}
+.pricing > .text > .bronze{
+    background-color: brown;
+    width: 70vw;
+    height: 20vw;
+}
+
+.pricing > .image > .bronze-img{
+    background-color: brown;
+    width: 20vw;
+    height: 20vw;
+}
+.pricing > .text > .silver{
+    background-color: silver;
+    width: 70vw;
+    height: 20vw;
+}
+.pricing > .image > .silver-img{
+    background-color: silver;
+    width: 20vw;
+    height: 20vw;
+}
+.pricing > .text > .gold{
+    background-color: gold;
+    width: 70vw;
+    height: 20vw;
+}
+.pricing > .image > .gold-img{
+    background-color: gold;
+    width: 20vw;
+    height: 20vw;
+}
+.pricing > .text > .bronze, .silver, .gold{
+    margin-top: 5vw;
+    margin-left: 10px;
+}
+.pricing > .image > .bronze-img, .silver-img, .gold-img{
+    margin-top: 5vw;
+    margin-right: 10px;
+}
+footer{
+    background-color: silver;
+    width: 100%;
+    height: 40vh;
+    color: black;
+}
+footer h1{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+}
+footer > .socials{
+    display: flex;
+    justify-content: space-around;
+}
+footer > .socials > .item{
+    width: 10vw;
+    height: 50px;
+    background-color: black;
+    margin-top: 25vh;
+}
+
+@media screen and (max-width: 800px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
+
+/*MOBILE VERSION*/
 nav{
     position: fixed;
     width: 100%;
@@ -20,29 +157,9 @@ nav{
     justify-content: space-around;
 }
 nav a{
-    margin-top: 10px;
+    margin-top: 25px;
     text-decoration: none;
     color: white;
     font-size: 20px;
-}
-header{
-    background-color: blue;
-    width: 100%;
-    height: 75vh;
-    color: black;
-    z-index: -20;
-
-}
-header img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -10;
-}
-main{
-    background-color: red;
-    width: 100%;
-    height: 800px;
-    color: black;
-    z-index: 10;
+    transition: 0.4s
 }
