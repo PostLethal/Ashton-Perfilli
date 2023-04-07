@@ -1,5 +1,5 @@
 :root{
-    --background-color: black;
+    --background-color: blue;
     --secondary-color: silver;
     --third-color: white;
 }
@@ -12,7 +12,7 @@ body{
     z-index: 10;
 }
 .mobile{
-    display: hidden;
+    display: none;
 }
 .desktop > nav{
     position: fixed;
@@ -38,7 +38,7 @@ body{
 .desktop > nav img{
     margin-top: 10px;
 }
-header{
+.desktop > header{
     width: 100%;
     height: 75vh;
     background-image: url(../media/images/pexels.png);
@@ -69,51 +69,49 @@ main .ashton{
     width: 30vw;
     background-color: black;
 }
-.pricing{
+.desktop > .pricing{
     background-color: black;
     width: 100%;
     height: 150vh;
     display: flex;
     justify-content: space-between;
 }
-.pricing > .text > .bronze{
+.desktop > .pricing > .text > .bronze{
     background-color: brown;
     width: 70vw;
     height: 20vw;
 }
 
-.pricing > .image > .bronze-img{
+.desktop > .pricing > .image > .bronze-img{
     background-color: brown;
     width: 20vw;
     height: 20vw;
 }
-.pricing > .text > .silver{
+.desktop > .pricing > .text > .silver{
     background-color: silver;
     width: 70vw;
     height: 20vw;
 }
-.pricing > .image > .silver-img{
+.desktop > .pricing > .image > .silver-img{
     background-color: silver;
     width: 20vw;
     height: 20vw;
 }
-.pricing > .text > .gold{
+.desktop > .pricing > .text > .gold{
     background-color: gold;
     width: 70vw;
     height: 20vw;
 }
-.pricing > .image > .gold-img{
+.desktop > .pricing > .image > .gold-img{
     background-color: gold;
     width: 20vw;
     height: 20vw;
 }
-.pricing > .text > .bronze, .silver, .gold{
+.desktop > .pricing > .text > .bronze, .silver, .gold{
     margin-top: 5vw;
-    margin-left: 10px;
 }
-.pricing > .image > .bronze-img, .silver-img, .gold-img{
+.desktop > .pricing > .image > .bronze-img, .silver-img, .gold-img{
     margin-top: 5vw;
-    margin-right: 10px;
 }
 footer{
     background-color: silver;
@@ -137,7 +135,7 @@ footer > .socials > .item{
     margin-top: 25vh;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     .desktop{
         display: none;
     }
@@ -160,6 +158,84 @@ nav a{
     margin-top: 25px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     transition: 0.4s
+}
+nav a:active{
+    text-decoration: underline;
+    color: purple;
+}
+.mobile-header{
+    width: 100%;
+    height: 40vh;
+    background-image: url(../media/images/pexels.png);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    right: 0;
+    top: 75px;
+    z-index: -5;
+}
+.mobile-main{
+    background-color: red;
+    width: 100%;
+    height: 800px;
+    color: black;
+}
+.mobile-main > .text{
+    margin-top: 100px;
+    height: 300px;
+    width: 100%;
+    background-color: black;
+}
+.mobile-main > .ashton{
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;
+    background-color: black;
+}
+.mobile-pricing{
+    padding-top: 100px;
+    background-color: white;
+    width: 100%;
+    height: 3000px;
+    align-items: center;
+}
+.mobile-pricing h1{
+    text-align: center;
+}
+.mobile-pricing > .bronze-img{
+    background-color: brown;
+    width: 100%;
+    height: 300px;
+}
+.mobile-pricing > .bronze{
+    margin-top: 20px;
+    background-color: brown;
+    width: 100%;
+    height: 600px; 
+
+
+}
+.mobile-pricing > .silver-img{
+    background-color: silver;
+    width: 100%;
+    height: 300px;
+}
+.mobile-pricing > .silver{
+    margin-top: 20px;
+    background-color: silver;
+    width: 100%;
+    height: 600px;
+}
+.mobile-pricing > .gold-img{
+    background-color: gold;
+    width: 100%;
+    height: 300px;
+}
+.mobile-pricing > .gold{
+    margin-top: 20px;
+    background-color: gold;
+    width: 100%;
+    height: 600px; 
 }
