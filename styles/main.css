@@ -1,5 +1,5 @@
 :root{
-    --background-color: blue;
+    --background-color: rgb(19, 19, 19);
     --secondary-color: silver;
     --third-color: white;
 }
@@ -68,11 +68,23 @@ main .text{
     background: linear-gradient(114deg, rgba(2,0,36,1) 0%, rgba(53,52,85,1) 73%, rgba(71,70,96,1) 79%, rgba(79,78,103,1) 81%, rgba(97,96,118,1) 86%, rgba(117,116,135,1) 94%, rgba(242,242,242,1) 100%);
     color: white;
 }
+main .text h1, p{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+main .text p{
+    font-size: 25px;
+}
 main .ashton{
     margin-top: 75px;
     height: 650px;
     width: 30vw;
     background-color: black;
+}
+main .ashton img{
+    width: 30vw;
+    height: 650px;
+    object-fit: cover;
 }
 .desktop > .pricing{
     background-color: black;
@@ -81,19 +93,29 @@ main .ashton{
     display: flex;
     justify-content: space-between;
 }
-.desktop > .pricing h1{
-    margin-left: 20px;
+.desktop > .pricing h1, ul{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.desktop > .pricing li{
+    margin-top: 30px;
+    font-size: 20px;
 }
 .desktop > .pricing > .text > .bronze{
     background-color: brown;
     width: 70vw;
     height: 25%;
 }
-
 .desktop > .pricing > .image > .bronze-img{
     background-color: brown;
     width: 20vw;
     height: 25%;
+    margin-right: 20px;
+}
+.desktop > .pricing > .image > .bronze-img img{
+    object-fit: cover;
+    width: 20vw;
+    height: 100%;
 }
 .desktop > .pricing > .text > .silver{
     background-color: silver;
@@ -104,6 +126,12 @@ main .ashton{
     background-color: silver;
     width: 20vw;
     height: 25%;
+    margin-right: 20px;
+}
+.desktop > .pricing > .image > .silver-img img{
+    object-fit: cover;
+    width: 20vw;
+    height: 100%;
 }
 .desktop > .pricing > .text > .gold{
     background-color: gold;
@@ -114,6 +142,12 @@ main .ashton{
     background-color: gold;
     width: 20vw;
     height: 25%;
+    margin-right: 20px;
+}
+.desktop > .pricing > .image > .gold-img img{
+    object-fit: cover;
+    width: 20vw;
+    height: 100%;
 }
 .desktop > .pricing > .text > .bronze, .silver, .gold{
     margin-top: 5vw;
@@ -122,7 +156,7 @@ main .ashton{
     margin-top: 5vw;
 }
 footer{
-    background-color: silver;
+    background-color: rgb(22, 22, 22);
     width: 100%;
     height: 40vh;
     color: black;
@@ -141,6 +175,21 @@ footer > .socials > .item{
     height: 50px;
     background-color: black;
     margin-top: 20vh;
+}
+footer > .socials > .one i{
+    color: white;
+    font-size: 50px;
+    margin-left: 3.5vw;
+}
+footer > .socials > .two i{
+    color: white;
+    font-size: 50px;
+    margin-left: 3.5vw;
+}
+footer > .socials > .three i{
+    color: white;
+    font-size: 50px;
+    margin-left: 3.5vw;
 }
 
 @media screen and (max-width: 900px){
