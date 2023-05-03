@@ -2,6 +2,7 @@
     --background-color: rgb(19, 19, 19);
     --secondary-color: silver;
     --third-color: white;
+    --black: rgb(0, 0, 0, 0.5);
 }
 *{
     margin: 0;
@@ -53,12 +54,27 @@ header{
     width: 100%;
     background-color: brown;
 }
-.bar h1{
+.bar > .text h1{
     text-align: center;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
+    padding-top: 20px;
 }
-
+.bar > .steps{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.bar > .steps h1{
+    text-align: center;
+}
+.bar > .steps p{
+    margin-top: 0px;
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: -2px;
+}
 main{
     background-color:hsla(0,0%,13%,1);
     background-image:
@@ -110,10 +126,11 @@ main .ashton img{
     background-color: red;
 }
 footer{
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(22, 22, 22, 0.7);
     width: 100%;
     height: 40vh;
     color: black;
+    color: white;
 }
 footer h1{
     text-align: center;
@@ -121,13 +138,13 @@ footer h1{
     font-size: 40px;
 }
 footer > .socials{
+    margin-top: -50px;
     display: flex;
     justify-content: space-around;
 }
 footer > .socials > .item{
     width: 10vw;
     height: 50px;
-    background-color: black;
     margin-top: 20vh;
 }
 footer > .socials > .one i{
