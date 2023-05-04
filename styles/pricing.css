@@ -1,0 +1,19 @@
+.options{
+    width: 100%;
+    height: 100vh;
+    background-color: darkviolet;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.options > .i{
+    width: 600px;
+    height: 600px;
+}
+.options > .interior{
+    background-color: red;
+}
+
+.options > .exterior{
+    background-color: black;
+}
