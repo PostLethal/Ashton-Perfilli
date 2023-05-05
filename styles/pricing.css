@@ -6,14 +6,17 @@
     justify-content: space-around;
     align-items: center;
 }
-.options > .i{
+.options > a .i{
     width: 600px;
     height: 600px;
 }
-.options > .interior{
+.options > a .interior{
     background-color: red;
 }
-
-.options > .exterior{
-    background-color: black;
+.options > a .i h1{
+    display: flex;
+    justify-content: center;
+}
+.options > a .exterior{
+    background-color: blue;
 }
