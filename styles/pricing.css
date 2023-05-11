@@ -8,33 +8,38 @@
 }
 .options > a .interior:hover{
     width: 650px;
-    height: 650px
+    height: 650px;
+    border: 3px solid white;
 }
 .options > a .interior{
     transition: 0.5s;
 }
 .options > a .exterior:hover{
     width: 650px;
-    height: 650px
+    height: 650px;
+    border: 3px solid white;
 }
 .options > a .exterior{
     transition: 0.5s;
 }
 .options > a .i{
     width: 600px;
-    height: 600px;
+    height: 60vh;
 }
 .options > a .interior{
     background-color: red;
+
 }
 .options > a .i h1{
     display: flex;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
     position: absolute;
-    top: 70%;
-    left: 40%;
-    color: black;
+    color: purple;
+    text-decoration: underline;
     font-size: 60px;
+    margin-top: 200px;
 }
 .options > a .i img{
     width: 100%;
@@ -43,7 +48,28 @@
 }
 .options > a .exterior{
     background-color: blue;
+
 }
 .options > a .interior, .exterior{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+@media screen and (max-width: 800px){
+    .options > a .i{
+        width: 40vw;
+        height: 40vh;
+    }
+    .options > a .interior:hover{
+        width: 40vw;
+        height: 40vh;
+    }
+    .options > a .exterior:hover{
+        width: 40vw;
+        height: 40vh;
+    }
+    .options > a .i{
+        border: 1px solid white;
+    }
+} 
